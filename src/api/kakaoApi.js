@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_SERVER_HOST } from "./todoApi";
+import { API_SERVER_HOST } from "./memberApi";
 
 // 카카오에서 발급받은 내 REST API 키
 const rest_api_key = `e41d8dd9a0f8e504ef740299788df39f`;

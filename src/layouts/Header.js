@@ -3,16 +3,14 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+
 // 항상 보이는 메뉴 (로그인 상관없이)
 const navigation = [
 	{ name: "Main", href: "/" },
-	{ name: "About", href: "/about" },
-	{ name: "test", href: "/test/" },
 ];
 // 로그인시에만 볼 수 있는 메뉴
 const navigationJWT = [
-	{ name: "Todo", href: "/todo/" },
-	{ name: "Product", href: "/products/" },
+	{ name: "Members", href: "/member/list" },
 ];
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
